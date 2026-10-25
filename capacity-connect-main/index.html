@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CAPACITY CONNECT — Digital Capacity Building and Learning Management Portal (SIH26075) for organizational training, competency development, and institutional knowledge sharing.">
+  <title>CAPACITY CONNECT — Digital Capacity Building Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/theme.js"></script>
+</head>
+<body style="background-color: var(--bg-app);">
+
+  <!-- =========================================================================
+       Landing Header / Navbar
+       ========================================================================= -->
+  <header style="background: var(--bg-surface); border-bottom: 1px solid var(--border-subtle); position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow-xs);">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between; height: 76px;">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" style="display: flex; align-items: center; gap: 0.85rem; text-decoration: none;">
+        <div class="sidebar-logo-icon" style="width: 42px; height: 42px; border-radius: 10px;">CC</div>
+        <div>
+          <span style="font-family: var(--font-heading); font-weight: 800; font-size: 1.25rem; color: var(--text-primary); letter-spacing: -0.02em; display: block; line-height: 1.1;">
+            CAPACITY CONNECT
+          </span>
+          <span style="font-size: 0.72rem; font-weight: 600; color: var(--primary-600); letter-spacing: 0.05em; text-transform: uppercase;">
+            Digital Capacity Portal • SIH26075
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav style="display: flex; align-items: center; gap: 2rem;">
+        <a href="#hero" style="font-weight: 600; color: var(--text-primary); font-size: 0.92rem;">Home</a>
+        <a href="#overview" style="font-weight: 500; color: var(--text-secondary); font-size: 0.92rem;">Platform Overview</a>
+        <a href="#roles" style="font-weight: 500; color: var(--text-secondary); font-size: 0.92rem;">Portals</a>
+        <a href="#learning" style="font-weight: 500; color: var(--text-secondary); font-size: 0.92rem;">Learning Hub</a>
+        <a href="#announcements" style="font-weight: 500; color: var(--text-secondary); font-size: 0.92rem;">Announcements</a>
+      </nav>
+
+      <!-- Auth CTAs & Theme Toggle -->
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Dark/Light Mode" type="button">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="pages/login.html" class="btn btn-secondary btn-sm" id="landingLoginBtn">
+          <svg viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
+          Login
+        </a>
+        <a href="pages/signup.html" class="btn btn-primary btn-sm" id="landingSignupBtn">
+          <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+          Register
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Hero Section
+       ========================================================================= -->
+  <section id="hero" style="background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-app) 100%); padding: 5rem 0 4rem; border-bottom: 1px solid var(--border-subtle); position: relative; overflow: hidden;">
+    <div class="container">
+      <div class="landing-hero-grid" style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3.5rem; align-items: center;">
+        
+        <div>
+          <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--primary-50); border: 1px solid var(--primary-100); color: var(--primary-700); padding: 0.4rem 1rem; border-radius: var(--radius-full); font-size: 0.82rem; font-weight: 700; margin-bottom: 1.25rem;">
+            <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--primary-600);"></span>
+            SIH26075 — Institutional Capacity Building Platform
+          </div>
+          
+          <h1 style="font-size: 2.85rem; font-weight: 800; color: var(--text-primary); line-height: 1.2; margin-bottom: 1.25rem; letter-spacing: -0.02em;">
+            Digital Capacity Building and <span style="color: var(--primary-600); background: linear-gradient(135deg, var(--primary-600), var(--accent-600)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Learning Management</span> Portal
+          </h1>
+          
+          <p style="font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.6; max-width: 620px;">
+            A centralized digital ecosystem tailored for organizational training, continuous competency development, transparent trainer matching, and structured knowledge sharing across government and public sector institutions.
+          </p>
+
+          <div class="landing-hero-ctas" style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="pages/signup.html" class="btn btn-primary btn-lg" id="heroGetStartedBtn">
+              Get Started Now
+              <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="pages/login.html" class="btn btn-secondary btn-lg" id="heroLoginBtn">
+              Access Portal
+            </a>
+          </div>
+
+          <!-- Quick Metrics Banner -->
+          <div style="display: flex; gap: 2.5rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border-subtle); flex-wrap: wrap;">
+            <div>
+              <div style="font-size: 1.5rem; font-weight: 800; color: var(--text-primary);" id="heroTraineesCount">1,500+</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Active Learners</div>
+            </div>
+            <div>
+              <div style="font-size: 1.5rem; font-weight: 800; color: var(--primary-600);" id="heroCoursesCount">48+</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Standardized Modules</div>
+            </div>
+            <div>
+              <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent-600);" id="heroCertCount">98.4%</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Assessment Success</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Right-Side Visual Composition (Institutional Learning & Competency Showcase) -->
+        <div class="hero-visual-wrapper" style="position: relative; display: flex; justify-content: center; align-items: center; padding: 1rem 0;">
+          
+          <!-- Ambient Decorative Background Glows -->
+          <div style="position: absolute; top: -15px; right: -15px; width: 220px; height: 220px; background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%); border-radius: 50%; pointer-events: none; filter: blur(25px);"></div>
+          <div style="position: absolute; bottom: -15px; left: -15px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(20, 184, 166, 0.15) 0%, transparent 70%); border-radius: 50%; pointer-events: none; filter: blur(25px);"></div>
+
+          <!-- Main Institutional Showcase Card -->
+          <div class="card" style="width: 100%; max-width: 440px; padding: 1.65rem; border-radius: var(--radius-xl); background: var(--bg-surface); border: 1px solid var(--border-medium); box-shadow: var(--shadow-xl); position: relative; z-index: 2;">
+            
+            <!-- Card Header -->
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.15rem; padding-bottom: 0.85rem; border-bottom: 1px solid var(--border-subtle);">
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <div style="width: 38px; height: 38px; border-radius: 10px; background: linear-gradient(135deg, var(--primary-600), var(--accent-600)); display: flex; align-items: center; justify-content: center; color: #ffffff; box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);">
+                  <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                </div>
+                <div>
+                  <div style="font-size: 0.92rem; font-weight: 800; color: var(--text-primary); line-height: 1.2;">Institutional Learning Hub</div>
+                  <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 500;">Competency & Evaluation Matrix</div>
+                </div>
+              </div>
+              <span class="badge badge-success" style="font-size: 0.7rem; font-weight: 700; display: inline-flex; align-items: center; gap: 4px; padding: 0.25rem 0.6rem;">
+                <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--success-500); display: inline-block;"></span>
+                Live Standard
+              </span>
+            </div>
+
+            <!-- Learning Track 1: Digital Governance -->
+            <div style="background: var(--bg-muted); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 0.85rem 1rem; margin-bottom: 0.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                <span style="font-size: 0.82rem; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 6px;">
+                  <svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--primary-600)" stroke-width="2" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  Digital Governance & Public Policy
+                </span>
+                <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary-600);">88% Mastery</span>
+              </div>
+              <div class="progress-bar" style="height: 6px; background: var(--bg-app); border-radius: 3px; overflow: hidden;">
+                <div class="progress-fill bg-primary" style="width: 88%; height: 100%; border-radius: 3px;"></div>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 0.35rem;">
+                <span>5 Core Modules • 12 Lectures</span>
+                <span style="color: var(--success-600); font-weight: 600;">✓ Pre-Assessment Cleared</span>
+              </div>
+            </div>
+
+            <!-- Learning Track 2: Cyber Security & Cloud Resilience -->
+            <div style="background: var(--bg-muted); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 0.85rem 1rem; margin-bottom: 0.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                <span style="font-size: 0.82rem; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 6px;">
+                  <svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--accent-600)" stroke-width="2" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  Cyber Security & Cloud Resilience
+                </span>
+                <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-600);">94% Score</span>
+              </div>
+              <div class="progress-bar" style="height: 6px; background: var(--bg-app); border-radius: 3px; overflow: hidden;">
+                <div class="progress-fill" style="width: 94%; height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--accent-600), var(--accent-400));"></div>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 0.35rem;">
+                <span>Cert-In Standard Aligned</span>
+                <span style="color: var(--accent-600); font-weight: 600;">Evaluated Benchmark</span>
+              </div>
+            </div>
+
+            <!-- Learning Track 3: Data Analytics & Decision Support -->
+            <div style="background: var(--bg-muted); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 0.85rem 1rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                <span style="font-size: 0.82rem; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 6px;">
+                  <svg viewBox="0 0 24 24" width="14" height="14" stroke="var(--warning-600)" stroke-width="2" fill="none"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                  Data Analytics & Decision Support
+                </span>
+                <span style="font-size: 0.75rem; font-weight: 700; color: var(--warning-600);">100% Verified</span>
+              </div>
+              <div class="progress-bar" style="height: 6px; background: var(--bg-app); border-radius: 3px; overflow: hidden;">
+                <div class="progress-fill" style="width: 100%; height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--warning-500), #f59e0b);"></div>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 0.35rem;">
+                <span>Practical Case Study Track</span>
+                <span style="color: var(--success-600); font-weight: 600;">✓ Certified Outcome</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Floating Accent Chip 1: Top Right (Verifiable Credential) -->
+          <div style="position: absolute; top: -10px; right: -12px; background: var(--bg-surface); border: 1px solid var(--border-medium); border-radius: var(--radius-lg); padding: 0.55rem 0.85rem; box-shadow: var(--shadow-lg); display: flex; align-items: center; gap: 0.6rem; z-index: 3;">
+            <div style="width: 28px; height: 28px; border-radius: 8px; background: var(--success-50); color: var(--success-600); display: flex; align-items: center; justify-content: center;">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <div>
+              <div style="font-size: 0.75rem; font-weight: 800; color: var(--text-primary); line-height: 1.1;">Verifiable Credential</div>
+              <div style="font-size: 0.65rem; color: var(--text-muted); font-weight: 600;">Tamper-proof Certificate</div>
+            </div>
+          </div>
+
+          <!-- Floating Accent Chip 2: Bottom Left (Competency Growth) -->
+          <div style="position: absolute; bottom: -10px; left: -12px; background: var(--bg-surface); border: 1px solid var(--border-medium); border-radius: var(--radius-lg); padding: 0.55rem 0.85rem; box-shadow: var(--shadow-lg); display: flex; align-items: center; gap: 0.6rem; z-index: 3;">
+            <div style="width: 28px; height: 28px; border-radius: 8px; background: var(--primary-50); color: var(--primary-600); display: flex; align-items: center; justify-content: center;">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <div>
+              <div style="font-size: 0.75rem; font-weight: 800; color: var(--text-primary); line-height: 1.1;">Competency Growth</div>
+              <div style="font-size: 0.65rem; color: var(--primary-600); font-weight: 700;">+24% Readiness Index</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Platform Overview: 3 Core Pillars
+       ========================================================================= -->
+  <section id="overview" style="padding: 4.5rem 0; background-color: var(--bg-surface); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 3.5rem;">
+        <span class="badge badge-primary" style="margin-bottom: 0.75rem;">Institutional Core Architecture</span>
+        <h2 style="font-size: 2.1rem; margin-bottom: 0.75rem;">Structured for Public Sector Excellence</h2>
+        <p style="font-size: 0.95rem; color: var(--text-muted);">
+          Built strictly around three operational pillars that power continuous learning, verifiable outcomes, and administrative readiness.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        
+        <!-- Pillar 1 -->
+        <div class="card" style="padding: 2rem; border-top: 4px solid var(--primary-600);">
+          <div style="width: 50px; height: 50px; border-radius: var(--radius-lg); background: var(--primary-50); color: var(--primary-600); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+            <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Organizational Training</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+            Curated curriculum covering Digital Governance, India Stack, Public Procurement (GeM), cyber security compliance, and evidence-based policymaking.
+          </p>
+          <ul style="font-size: 0.84rem; color: var(--text-secondary); padding-left: 1.25rem; margin-top: 1rem; line-height: 1.6;">
+            <li>Standardized modular courses</li>
+            <li>Interactive multimedia resources</li>
+            <li>Pre & Post assessment evaluations</li>
+          </ul>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="card" style="padding: 2rem; border-top: 4px solid var(--accent-600);">
+          <div style="width: 50px; height: 50px; border-radius: var(--radius-lg); background: var(--accent-50); color: var(--accent-600); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+            <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+          </div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Competency Development</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+            A transparent matching engine mapping trainee skill gaps directly to subject requirements and domain trainer expertise without opaque black-box systems.
+          </p>
+          <ul style="font-size: 0.84rem; color: var(--text-secondary); padding-left: 1.25rem; margin-top: 1rem; line-height: 1.6;">
+            <li>Role-based competency frameworks</li>
+            <li>Subject-matter expert matchmaking</li>
+            <li>Auditable skill assessment benchmarks</li>
+          </ul>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="card" style="padding: 2rem; border-top: 4px solid var(--warning-600);">
+          <div style="width: 50px; height: 50px; border-radius: var(--radius-lg); background: var(--warning-50); color: var(--warning-600); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+            <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Knowledge Sharing</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+            Central repository of video lectures, government circulars, standard operating procedures, and YouTube educational embeds accessible nationwide.
+          </p>
+          <ul style="font-size: 0.84rem; color: var(--text-secondary); padding-left: 1.25rem; margin-top: 1rem; line-height: 1.6;">
+            <li>Interactive digital resource library</li>
+            <li>Departmental feedback integration</li>
+            <li>Verified digital certification registry</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Three Role Portals Section
+       ========================================================================= -->
+  <section id="roles" style="padding: 4.5rem 0; background-color: var(--bg-app); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 3.5rem;">
+        <span class="badge badge-info" style="margin-bottom: 0.75rem;">Role-Based Workspaces</span>
+        <h2 style="font-size: 2.1rem; margin-bottom: 0.75rem;">Tailored for Every Stakeholder</h2>
+        <p style="font-size: 0.95rem; color: var(--text-muted);">
+          Each role experiences an intuitive, dedicated interface configured for their specific administrative responsibilities.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+        
+        <!-- Role 1: Trainee -->
+        <div class="card" style="display: flex; flex-direction: column;">
+          <div class="card-header" style="background: var(--primary-50); border-bottom: 1px solid var(--primary-100);">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span class="badge badge-primary" style="font-size: 0.8rem;">Role 1</span>
+              <h3 style="font-size: 1.15rem; margin: 0; color: var(--primary-900);">Trainee Portal</h3>
+            </div>
+          </div>
+          <div class="card-body" style="flex: 1;">
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+              Enables civil servants and departmental officers to enroll in courses, study multimodal resources, and take live subject assessments.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              <div>✔ Personalized Learning Progress Dashboard</div>
+              <div>✔ Subject-Wise Interactive MCQ Engine</div>
+              <div>✔ Instant Result & Explanation Breakdown</div>
+              <div>✔ Digital Verifiable Certificates</div>
+              <div>✔ Comprehensive Feedback Submission</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="pages/login.html" class="btn btn-primary w-100">
+              Enter Trainee Workspace
+            </a>
+          </div>
+        </div>
+
+        <!-- Role 2: Trainer -->
+        <div class="card" style="display: flex; flex-direction: column;">
+          <div class="card-header" style="background: var(--accent-50); border-bottom: 1px solid var(--accent-100);">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span class="badge badge-success" style="font-size: 0.8rem;">Role 2</span>
+              <h3 style="font-size: 1.15rem; margin: 0; color: var(--accent-700);">Trainer Portal</h3>
+            </div>
+          </div>
+          <div class="card-body" style="flex: 1;">
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+              Gives educators and domain specialists tools to design questionnaires, monitor participant compliance, and publish study materials.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              <div>✔ Interactive Questionnaire Builder</div>
+              <div>✔ Trainee Participation & Submission Monitor</div>
+              <div>✔ Performance Analytics & Visual Distributions</div>
+              <div>✔ Trainer Resource Library & Upload UI</div>
+              <div>✔ Competency Profile for Matchmaking</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="pages/login.html" class="btn btn-accent w-100">
+              Enter Trainer Workspace
+            </a>
+          </div>
+        </div>
+
+        <!-- Role 3: Admin -->
+        <div class="card" style="display: flex; flex-direction: column;">
+          <div class="card-header" style="background: var(--warning-50); border-bottom: 1px solid var(--warning-100);">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span class="badge badge-warning" style="font-size: 0.8rem;">Role 3</span>
+              <h3 style="font-size: 1.15rem; margin: 0; color: var(--warning-700);">Admin Portal</h3>
+            </div>
+          </div>
+          <div class="card-body" style="flex: 1;">
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+              Comprehensive oversight for training directors to approve users, manage access roles, publish alerts, and map competencies.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              <div>✔ User Registration Approval Pipeline</div>
+              <div>✔ Role & Privilege Management</div>
+              <div>✔ Institutional Content & Notice Publishing Hub</div>
+              <div>✔ Certification & Assessment Registry</div>
+              <div>✔ Skill & Competency Transparent Matcher</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="pages/login.html" class="btn btn-secondary w-100" style="border-color: var(--warning-500); color: var(--warning-700); font-weight: 700;">
+              Enter Admin Directorate
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Featured Learning Section (Courses & Video Resources)
+       ========================================================================= -->
+  <section id="learning" style="padding: 4.5rem 0; background-color: var(--bg-surface); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span class="badge badge-primary" style="margin-bottom: 0.5rem;">Standardized Curriculum</span>
+          <h2 style="font-size: 2.1rem; margin-bottom: 0.25rem;">Featured Learning Programs</h2>
+          <p style="font-size: 0.92rem; color: var(--text-muted); margin: 0;">Access certified self-paced modules designed for government capacity building.</p>
+        </div>
+        <a href="pages/trainee/courses.html" class="btn btn-outline btn-sm">
+          Browse All Courses &rarr;
+        </a>
+      </div>
+
+      <!-- Dynamic Course Cards Loaded from Store -->
+      <div class="courses-grid" id="landingCoursesGrid">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- YouTube & Multimedia Section -->
+      <div style="margin-top: 3.5rem; padding: 2rem; background: var(--bg-app); border-radius: var(--radius-xl); border: 1px solid var(--border-subtle);">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="badge badge-danger" style="margin-bottom: 0.35rem;">Multimedia Lectures</span>
+            <h3 style="font-size: 1.35rem; margin: 0;">Featured Educational Video Lectures</h3>
+          </div>
+          <a href="pages/trainee/learning-resources.html" class="btn btn-secondary btn-sm">
+            View All Video Resources &rarr;
+          </a>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;" id="landingVideosGrid">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Announcements, Notifications & Achievements Feed
+       ========================================================================= -->
+  <section id="announcements" style="padding: 4.5rem 0; background-color: var(--bg-app); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 3rem;">
+        <span class="badge badge-warning" style="margin-bottom: 0.75rem;">Institutional Broadcasts</span>
+        <h2 style="font-size: 2.1rem; margin-bottom: 0.75rem;">Announcements & Achievements</h2>
+        <p style="font-size: 0.95rem; color: var(--text-muted);">
+          Stay up to date with national circulars, newly published assessments, and milestone accomplishments.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+        
+        <!-- Column 1: Announcements -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.05rem;">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--primary-600)" stroke-width="2" fill="none"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              Official Announcements
+            </h3>
+            <span class="badge badge-primary">Latest</span>
+          </div>
+          <div class="card-body" id="landingAnnouncementsList" style="padding: 1.25rem; display: flex; flex-direction: column; gap: 1rem;">
+            <!-- Injected via JavaScript -->
+          </div>
+        </div>
+
+        <!-- Column 2: Notifications -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.05rem;">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--warning-600)" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Active Notifications
+            </h3>
+            <span class="badge badge-warning">Live</span>
+          </div>
+          <div class="card-body" id="landingNotificationsList" style="padding: 1.25rem; display: flex; flex-direction: column; gap: 1rem;">
+            <!-- Injected via JavaScript -->
+          </div>
+        </div>
+
+        <!-- Column 3: Institutional Achievements -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.05rem;">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--success-600)" stroke-width="2" fill="none"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              Milestone Achievements
+            </h3>
+            <span class="badge badge-success">Impact</span>
+          </div>
+          <div class="card-body" id="landingAchievementsList" style="padding: 1.25rem; display: flex; flex-direction: column; gap: 1rem;">
+            <!-- Injected via JavaScript -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="app-footer" style="padding: 2.5rem 0; background-color: #0f172a; color: #94a3b8; border-top: none;">
+    <div class="container" style="display: flex; flex-direction: column; gap: 1.5rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <div class="sidebar-logo-icon" style="width: 36px; height: 36px;">CC</div>
+          <div>
+            <div style="font-weight: 800; color: #ffffff; font-size: 1.1rem;">CAPACITY CONNECT</div>
+            <div style="font-size: 0.75rem; color: #64748b;">SIH26075 — Digital Capacity Building Portal</div>
+          </div>
+        </div>
+        <div class="footer-links" style="color: #94a3b8;">
+          <a href="index.html" style="color: #94a3b8;">Home</a>
+          <a href="pages/login.html" style="color: #94a3b8;">Login</a>
+          <a href="pages/signup.html" style="color: #94a3b8;">Signup</a>
+          <a href="pages/trainee/dashboard.html" style="color: #94a3b8;">Trainee</a>
+          <a href="pages/trainer/dashboard.html" style="color: #94a3b8;">Trainer</a>
+          <a href="pages/admin/dashboard.html" style="color: #94a3b8;">Admin</a>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 0.78rem; color: #64748b; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.25rem; flex-wrap: wrap; gap: 0.5rem;">
+        <div>© 2026 CAPACITY CONNECT • Smart India Hackathon (SIH26075) • Phase 1 Prototype</div>
+        <div>Standardized for Institutional Capacity Building & Learning Management</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Firebase Web SDK (Compat CDN v10.13.0) -->
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-storage-compat.js"></script>
+
+  <!-- App Core Scripts -->
+  <script src="js/firebase-config.js"></script>
+  <script src="js/demo-data.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+
+  <!-- Dynamic Landing Data Populator -->
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Render Featured Courses
+      const coursesContainer = document.getElementById('landingCoursesGrid');
+      if (coursesContainer) {
+        try {
+          const courses = await Auth.getCourses();
+          if (courses && courses.length > 0) {
+            coursesContainer.innerHTML = courses.slice(0, 4).map(c => `
+              <div class="course-card">
+                <div class="course-card-banner">
+                  <span class="badge badge-primary course-badge-top" style="background:rgba(255,255,255,0.2); color:#ffffff; border:1px solid rgba(255,255,255,0.3);">${c.badge || 'Course'}</span>
+                  <div style="font-size:0.78rem; color:#dbeafe; font-weight:600;">${c.duration || '4 Weeks'}</div>
+                </div>
+                <div class="course-card-body">
+                  <div class="course-category">${c.subject}</div>
+                  <h4 class="course-title">${c.title}</h4>
+                  <p class="course-desc">${c.description}</p>
+                  <div class="course-trainer">
+                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>${c.trainerName || 'Assigned Faculty'}</span>
+                  </div>
+                  <div class="course-meta">
+                    <div class="course-meta-item">
+                      <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                      <span>${c.level || 'Intermediate'}</span>
+                    </div>
+                    <div class="course-meta-item">
+                      <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                      <span>${c.resourceCount || 0} Resources</span>
+                    </div>
+                  </div>
+                  <a href="pages/trainee/course-details.html?id=${c.id}" class="btn btn-outline btn-sm w-100" style="margin-top:auto;">
+                    View Course Syllabus
+                  </a>
+                </div>
+              </div>
+            `).join('');
+          }
+        } catch (err) {
+          console.error('Error loading landing courses:', err);
+        }
+      }
+
+      // Render Video Resources Preview
+      const videoContainer = document.getElementById('landingVideosGrid');
+      if (videoContainer) {
+        try {
+          const resources = await Auth.getLearningResources();
+          const ytResources = (resources || []).filter(r => r.type === 'youtube').slice(0, 3);
+          if (ytResources.length > 0) {
+            videoContainer.innerHTML = ytResources.map(r => `
+              <div class="card" style="padding:1.25rem; display:flex; flex-direction:column; background:var(--bg-surface);">
+                <div style="position:relative; border-radius:var(--radius-md); overflow:hidden; background:#0f172a; height:140px; display:flex; align-items:center; justify-content:center; margin-bottom:1rem;">
+                  <div style="position:absolute; width:44px; height:44px; border-radius:50%; background:rgba(239, 68, 68, 0.9); display:flex; align-items:center; justify-content:center; color:#ffffff;">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                  <span style="position:absolute; bottom:8px; right:8px; background:rgba(0,0,0,0.75); color:#fff; font-size:0.72rem; padding:2px 6px; border-radius:4px; font-weight:600;">${r.duration || 'Lecture'}</span>
+                </div>
+                <span class="badge badge-primary" style="align-self:flex-start; margin-bottom:0.5rem; font-size:0.72rem;">${r.subject}</span>
+                <h4 style="font-size:0.95rem; font-weight:700; margin-bottom:0.4rem; line-height:1.35;">${r.title}</h4>
+                <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:1rem; flex:1;">${r.description}</p>
+                <a href="pages/trainee/learning-resources.html" class="btn btn-secondary btn-sm w-100">
+                  Watch Lecture
+                </a>
+              </div>
+            `).join('');
+          }
+        } catch (err) {
+          console.error('Error loading video resources:', err);
+        }
+      }
+
+      // Render Announcements
+      const annContainer = document.getElementById('landingAnnouncementsList');
+      if (annContainer) {
+        try {
+          const announcements = await Auth.getAnnouncements();
+          if (announcements && announcements.length > 0) {
+            annContainer.innerHTML = announcements.slice(0, 4).map(a => `
+              <div style="border-bottom:1px solid var(--border-light); padding-bottom:0.85rem;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.25rem;">
+                  <span class="badge badge-primary" style="font-size:0.7rem;">${a.category || 'Institutional'}</span>
+                  <span style="font-size:0.75rem; color:var(--text-muted);">${UI.formatDate(a.date || a.createdAt)}</span>
+                </div>
+                <div style="font-weight:700; font-size:0.88rem; color:var(--text-primary); margin-bottom:0.25rem;">${a.title}</div>
+                <div style="font-size:0.8rem; color:var(--text-secondary); line-height:1.4;">${a.content}</div>
+              </div>
+            `).join('');
+          } else {
+            annContainer.innerHTML = '<div style="color:var(--text-muted); font-size:0.85rem;">No active announcements.</div>';
+          }
+        } catch (err) {
+          console.error('Error loading announcements:', err);
+        }
+      }
+
+      // Render Notifications
+      const notifContainer = document.getElementById('landingNotificationsList');
+      if (notifContainer) {
+        try {
+          const notifications = await Auth.getNotifications();
+          if (notifications && notifications.length > 0) {
+            notifContainer.innerHTML = notifications.slice(0, 4).map(n => `
+              <div style="border-bottom:1px solid var(--border-light); padding-bottom:0.85rem;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.25rem;">
+                  <span class="badge ${n.priority === 'High' ? 'badge-danger' : 'badge-warning'}" style="font-size:0.7rem;">${n.priority || 'Standard'} Priority</span>
+                  <span style="font-size:0.75rem; color:var(--text-muted);">${UI.formatDate(n.date || n.createdAt)}</span>
+                </div>
+                <div style="font-weight:700; font-size:0.88rem; color:var(--text-primary); margin-bottom:0.25rem;">${n.title}</div>
+                <div style="font-size:0.8rem; color:var(--text-secondary); line-height:1.4;">${n.message}</div>
+              </div>
+            `).join('');
+          } else {
+            notifContainer.innerHTML = '<div style="color:var(--text-muted); font-size:0.85rem;">No active broadcasts.</div>';
+          }
+        } catch (err) {
+          console.error('Error loading notifications:', err);
+        }
+      }
+
+      // Render Achievements
+      const achContainer = document.getElementById('landingAchievementsList');
+      if (achContainer) {
+        try {
+          const achievements = await Auth.getAchievements();
+          if (achievements && achievements.length > 0) {
+            achContainer.innerHTML = achievements.slice(0, 4).map(ac => `
+              <div style="border-bottom:1px solid var(--border-light); padding-bottom:0.85rem;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.25rem;">
+                  <span class="badge badge-success" style="font-size:0.7rem;">${ac.badge || 'Milestone'}</span>
+                  <span style="font-size:0.75rem; color:var(--text-muted);">${UI.formatDate(ac.date || ac.createdAt)}</span>
+                </div>
+                <div style="font-weight:700; font-size:0.88rem; color:var(--text-primary); margin-bottom:0.25rem;">${ac.title}</div>
+                <div style="font-size:0.8rem; color:var(--text-secondary); line-height:1.4;">${ac.milestone}</div>
+              </div>
+            `).join('');
+          } else {
+            achContainer.innerHTML = '<div style="color:var(--text-muted); font-size:0.85rem;">No milestone achievements.</div>';
+          }
+        } catch (err) {
+          console.error('Error loading achievements:', err);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
